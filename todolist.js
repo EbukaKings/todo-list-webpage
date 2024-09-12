@@ -15,7 +15,6 @@ function renderTodo() {
             <div>
                 <button class="delete-button" onclick="deleteTodo(${index})">Delete</button>
             </div>
-            <div class="js-error"></div>
         `;
         todolist += html;
     });
@@ -43,8 +42,8 @@ function clickTodo() {
         renderTodo();
         addToStorage();
     } else {
-        // alert('Please fill in both fields.');
-        document.querySelector(".js-error").innerHTML = "Please fill in both fields.";
+        alert('Please fill in both fields.');
+        // document.querySelector(".js-error").innerHTML = "Please fill in both fields.";
     }
 }
 

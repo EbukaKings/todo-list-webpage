@@ -1,5 +1,6 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    background-color: yellow;
 }
 .js-todolist,
 .todo-input-grid {
@@ -36,4 +37,13 @@ body {
     padding-top: 8px;
     padding-bottom: 8px;
 
+}
+@media only screen and(max-width: 480) {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: yellow;
+        width: 100%;
+        /* height: 100%; */
+    }
+    
 }
